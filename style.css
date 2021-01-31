@@ -1,0 +1,86 @@
+@font-face{
+	font-family: raleway;
+	src: url("Raleway-VariableFont_wght.ttf");
+}
+
+body{
+	font-family: raleway;
+}
+
+header{
+	display: flex; /*met sur la meme ligne*/
+	justify-content: space-between; /* alinement équitable horizontal */
+	align-items: flex-start; /*alignement vertical en haut */
+}
+
+h1{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 1em;
+}
+
+button{
+	color: white;
+	background-color: blue;
+	font-weight: bold;
+	font-size: 1em;
+	border: none;
+	padding: 10px 10px 10px 10px;
+}
+
+.fa-map-marker-alt{
+	background-color: #F2F2F2;
+	padding: 10px 10px 10px 10px;
+	border: solid #F2F2F2 1px;
+
+}
+
+input{
+	border: solid #F2F2F2 1px;
+	padding: 10px 10px 10px 10px;
+}
+
+#filtres{
+	font-weight: bold;
+}
+
+#hebergements h2{
+	font-weight: bold;
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;	
+}
+
+nav li{
+	margin-right: 15px;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+#titre{
+	width: 20%;
+}
+
+#filtres{
+	display: flex;
+}
+
+.filtreelement{
+	margin-left: 40px;
+	border: solid #F2F2F2;
+	padding: 10px 10px 10px 10px;
+	border-radius: 20px;
+}
+
+.fa-money-bill-wave{
+	border-radius: 50%;
+	background-color: #DEEBFF;
+	color: #0065FC;
+}
