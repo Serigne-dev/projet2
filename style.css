@@ -29,12 +29,18 @@ button{
 	font-size: 1em;
 	border: none;
 	padding: 10px 10px 10px 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-left: -5px;
 }
 
 .fa-map-marker-alt{
 	background-color: #F2F2F2;
 	padding: 10px 10px 10px 10px;
 	border: solid #F2F2F2 1px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-right: -5px;
 
 }
 
@@ -65,46 +71,50 @@ nav a{
 }
 
 #titre{
-	width: 20%;
+	width: 10%;
 }
 
 #filtres{
 	display: flex;
+	align-items: center;
 }
 
 .filtreelement{
 	margin-left: 40px;
 	border: solid #F2F2F2;
-	padding: 5px 5px 5px 5px;
 	border-radius: 20px;
+}
+
+.nomfiltre{
+	padding: 0px 12px 0px 12px;
 }
 
 .fa-money-bill-wave{
 	border-radius: 50%;
 	background-color: #DEEBFF;
 	color: #0065FC;
-	padding: 5px;
+	padding: 12px 10px 12px 10px;
 }
 
 .fa-child{
 	border-radius: 50%;
 	background-color: #DEEBFF;
 	color: #0065FC;
-	padding: 5px;
+	padding: 12px 10px 12px 10px;
 }
 
 .fa-heart{
 	border-radius: 50%;
 	background-color: #DEEBFF;
 	color: #0065FC;
-	padding: 5px;
+	padding: 12px 10px 12px 10px;;
 }
 
 .fa-dog{
 	border-radius: 50%;
 	background-color: #DEEBFF;
 	color: #0065FC;
-	padding: 5px;
+	padding: 12px 10px 12px 10px;;
 }
 
 .fa-info{
@@ -118,30 +128,41 @@ nav a{
 	display: flex;
 }
 
+.etoile-bleue{
+	color: #0065FC;
+}
+
+.etoile-gris{
+	color: #F2F2F2;
+}
+
 #hebergements{
 	background-color: #F2F2F2;
 	border-radius: 2%;	
 	padding: 10px 0px 0px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 #figurehebergements{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 #hebergements figure{
 	background-color: white;
 	border-radius: 10%;
-	padding-left: 10px;
+	padding: 10px 10px 10px 10px;
+	width: 190px;	
 }
 
 #hebergements figure img{
-	width: 200px;
+	width: 180px;
 	height: 100px;
 	border-radius: 10%;
-	padding-right: 10px;
-	padding-top: 7px;
+	
 }
 
 aside{
@@ -151,8 +172,8 @@ aside{
 }
 
 aside img{
-	width: 200px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	border-radius: 10%;
 	padding-right: 10px;
 	padding-top: 7px;
@@ -160,15 +181,19 @@ aside img{
 
 aside figure{
 	background-color: white;
-	padding-left: 10px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 10%;
+	display: flex;
+	width: 320px;
 }
+
 
 aside h1{
 	padding-left: 35px;
 }
 
 #activites figure img{
-	width: 200px;
+	width: 150px;
 	height: 100px;
 	border-radius: 10%;
 	padding-right: 10px;
