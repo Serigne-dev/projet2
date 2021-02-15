@@ -1,3 +1,4 @@
+/*toute la page*/
 @font-face{
 	font-family: raleway;
 	src: url("Raleway-VariableFont_wght.ttf");
@@ -7,6 +8,31 @@ body{
 	font-family: raleway;
 }
 
+
+/* sur tout type d'ecran, quand la largeur de la fenetre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px){
+	header{
+		flex-direction: column;
+		width: auto;
+	}
+
+	section{
+		flex-direction: column;
+		width: auto;
+	}
+
+	aside{
+		flex-direction: column;
+		width: auto;
+	}
+
+	footer{
+		display: flex;
+		width: auto;
+	}
+}
+
+/*header*/
 header{
 	display: flex; /*met sur la meme ligne*/
 	justify-content: space-between; /* alinement équitable horizontal */
@@ -70,6 +96,11 @@ nav a{
 	text-decoration: none;
 }
 
+#hebergements a{
+	text-decoration: none;
+}
+
+
 #titre{
 	width: 10%;
 }
@@ -87,6 +118,10 @@ nav a{
 
 .nomfiltre{
 	padding: 0px 12px 0px 12px;
+}
+
+.nomfiltre:hover{
+	background-color: gold;
 }
 
 .fa-money-bill-wave{
@@ -171,9 +206,13 @@ aside{
 	margin-left: 20px;
 }
 
+aside a{
+	text-decoration: none;
+}
+
 aside img{
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
 	border-radius: 10%;
 	padding-right: 10px;
 	padding-top: 7px;
@@ -184,7 +223,7 @@ aside figure{
 	padding: 10px 10px 10px 10px;
 	border-radius: 10%;
 	display: flex;
-	width: 320px;
+	width: 300px;
 }
 
 
